@@ -4,7 +4,7 @@
 
 Go to the root folder of `CVXRS_OPF`.
 
-## Citing DPI-Net
+## Citing CVXRS_OPF
 
 If you found this content useful for your research, please consider citing: 
 
