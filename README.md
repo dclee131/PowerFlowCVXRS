@@ -14,8 +14,7 @@ Convex Restriction of Power Flow Feasibility Set
       author={D. {Lee} and H. D. {Nguyen} and K. {Dvijotham} and K. {Turitsyn}},
       journal={IEEE Transactions on Control of Network Systems},
       title={Convex Restriction of Power Flow Feasibility Sets},
-      year={2019}, volume={6}, number={3},
-      pages={1235-1245}, doi={10.1109/TCNS.2019.2930896}, month={Sep.}
+      year={2019}, volume={6}, number={3}, pages={1235-1245}, month={Sep.}
     }
 
 Feasible Path Identification of Optimal Power Flow
