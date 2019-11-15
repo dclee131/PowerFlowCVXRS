@@ -1,8 +1,52 @@
 # Optimal Power Flow with Convex Restriction
 
-## Code
+## Quick Start
 
 Go to the root folder of `CVXRS_OPF`.
+
+```python
+# An example that shows how to use the UCB1 learning policy
+# to make decisions between two arms based on their expected rewards.
+
+# Import MABWiser Library
+from mabwiser.mab import MAB, LearningPolicy, NeighborhoodPolicy
+
+# Data
+arms = ['Arm1', 'Arm2']
+decisions = ['Arm1', 'Arm1', 'Arm2', 'Arm1']
+rewards = [20, 17, 25, 9]
+
+# Model 
+mab = MAB(arms, LearningPolicy.UCB1(alpha=1.25))
+
+# Train
+mab.fit(decisions, rewards)
+
+# Test
+mab.predict()
+```
+
+
+## Installation
+
+There are two alternatives to install the library: 
+
+1. Install from the provided wheel package
+2. Build from the source code 
+	
+### Requirements
+
+The library requires Python **3.6+**. The ``requirements.txt`` lists the necessary
+packages. The following packages are used currently:
+
+```python
+joblib
+numpy
+pandas
+scikit-learn
+scipy
+seaborn>=0.9.0
+```
 
 ## Citing CVXRS_OPF
 
