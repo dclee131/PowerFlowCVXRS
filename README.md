@@ -27,13 +27,6 @@ mab.predict()
 ```
 
 
-## Installation
-
-There are two alternatives to install the library: 
-
-1. Install from the provided wheel package
-2. Build from the source code 
-	
 ### Requirements
 
 The library requires Python **3.6+**. The ``requirements.txt`` lists the necessary
@@ -105,72 +98,6 @@ violation_status, margin=check_violation(network_data)
 
 
 ```
-
-    ┌ Info: Precompiling Ipopt [b6b21f68-93f8-5de0-b562-5493be1d77c9]
-    └ @ Base loading.jl:1186
-
-
-    [32m[info | PowerModels]: removing 3 cost terms from generator 32: Float64[][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 29: [3266.88, 0.0][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 1: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 54: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 2: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 41: Float64[][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 51: [3504.34, 0.0][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 53: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 27: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 42: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 33: Float64[][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 28: [3478.18, 0.0][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 50: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 52: Float64[][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 26: [1605.6, 0.0][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 10: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 24: Float64[][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 25: [2486.19, 0.0][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 23: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 49: Float64[][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 5: [2498.34, 0.0][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 31: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 43: Float64[][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 39: [3407.26, 0.0][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 34: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 44: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 17: Float64[][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 37: [2460.08, 0.0][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 47: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 9: Float64[][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 12: [2222.1, 0.0][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 20: [2420.23, 0.0][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 6: [12458.2, 0.0][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 14: [2599.4, 0.0][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 7: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 8: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 19: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 4: Float64[][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 22: [2727.73, 0.0][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 11: [2894.83, 0.0][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 35: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 13: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 15: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 16: Float64[][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 40: [2460.51, 0.0][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 21: [1667.39, 0.0][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 38: Float64[][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 46: [2864.95, 0.0][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 45: [1261.22, 0.0][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 36: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 48: Float64[][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 18: Float64[][39m
-    [32m[info | PowerModels]: removing 1 cost terms from generator 30: [2575.84, 0.0][39m
-    [32m[info | PowerModels]: removing 3 cost terms from generator 3: Float64[][39m
-    
-    ******************************************************************************
-    This program contains Ipopt, a library for large-scale nonlinear optimization.
-     Ipopt is released as open source code under the Eclipse Public License (EPL).
-             For more information visit http://projects.coin-or.org/Ipopt
-    ******************************************************************************
-    
     Local search OPF objective solution: 97213.61
     Initial OPF objective solution: 97213.61
 
@@ -180,17 +107,6 @@ violation_status, margin=check_violation(network_data)
 
     (Dict("line"=>[],"qg"=>[],"pg"=>[],"angle"=>[],"vmag"=>[]), 0.1)
 
-
-
-
-```julia
-
-```
-
-
-```julia
-
-```
 
 
 ```julia
@@ -229,154 +145,6 @@ for iter=2:result_cvxr["max_iter"]
 end
 ```
 
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3196) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3198) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3365) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3409) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3447) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3449) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3616) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3660) of matrix 'A'.
-
-
-    ┌ Warning: CVXRS was not optimal. (SLOW_PROGRESS)
-    └ @ Main /Users/dc/Documents/Github/CVXRS_master/PowerCVXRS/PowerCVXRS.jl:650
-
-
-    Iteration 2: 104879.07  113487.182   8.4549   0.0523
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3196) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3198) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3365) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3409) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3447) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3449) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3616) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3660) of matrix 'A'.
-
-
-    ┌ Warning: CVXRS was not optimal. (SLOW_PROGRESS)
-    └ @ Main /Users/dc/Documents/Github/CVXRS_master/PowerCVXRS/PowerCVXRS.jl:650
-
-
-    Iteration 3: 105861.82  113886.578   0.3324   0.0147
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3196) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3198) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3365) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3409) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3447) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3449) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3616) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3660) of matrix 'A'.
-
-
-    ┌ Warning: CVXRS was not optimal. (SLOW_PROGRESS)
-    └ @ Main /Users/dc/Documents/Github/CVXRS_master/PowerCVXRS/PowerCVXRS.jl:650
-
-
-    Iteration 4: 106809.24  115314.091   0.6049   0.0084
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3196) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3198) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3365) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3447) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3449) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3616) of matrix 'A'.
-
-
-    ┌ Warning: CVXRS was not optimal. (SLOW_PROGRESS)
-    └ @ Main /Users/dc/Documents/Github/CVXRS_master/PowerCVXRS/PowerCVXRS.jl:650
-
-
-    Iteration 5: 106557.38  115422.539   10.1719   0.0074
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3196) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3198) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3365) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3409) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3447) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3449) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3616) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3660) of matrix 'A'.
-
-
-    ┌ Warning: CVXRS was not optimal. (SLOW_PROGRESS)
-    └ @ Main /Users/dc/Documents/Github/CVXRS_master/PowerCVXRS/PowerCVXRS.jl:650
-
-
-    Iteration 6: 106051.56  111768.095   10.1712   0.0059
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3196) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3198) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3365) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3447) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3449) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3616) of matrix 'A'.
-
-
-    ┌ Warning: CVXRS was not optimal. (SLOW_PROGRESS)
-    └ @ Main /Users/dc/Documents/Github/CVXRS_master/PowerCVXRS/PowerCVXRS.jl:650
-
-
-    Iteration 7: 106735.71  115709.251   0.1555   0.0051
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3196) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3198) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3365) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3409) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3447) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3449) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3616) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3660) of matrix 'A'.
-
-
-    ┌ Warning: CVXRS was not optimal. (SLOW_PROGRESS)
-    └ @ Main /Users/dc/Documents/Github/CVXRS_master/PowerCVXRS/PowerCVXRS.jl:650
-
-
-    Iteration 8: 105282.15  110637.618   0.2554   0.0047
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3196) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3198) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3365) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3409) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3447) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3449) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3616) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3660) of matrix 'A'.
-
-
-    ┌ Warning: CVXRS was not optimal. (SLOW_PROGRESS)
-    └ @ Main /Users/dc/Documents/Github/CVXRS_master/PowerCVXRS/PowerCVXRS.jl:650
-
-
-    Iteration 9: 106177.66  115154.939   0.1746   0.0043
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3196) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3198) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3365) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3409) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3447) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3449) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3616) of matrix 'A'.
-    MOSEK warning 705: #1 (nearly) zero elements are specified in sparse row ''(3660) of matrix 'A'.
-
-
-    ┌ Warning: CVXRS was not optimal. (SLOW_PROGRESS)
-    └ @ Main /Users/dc/Documents/Github/CVXRS_master/PowerCVXRS/PowerCVXRS.jl:650
-
-
-    Iteration 10: 105822.47  111112.751   0.1096   0.004
-
-
-
-```julia
-result_cvxr["alpha"]
-```
-
-
-
-
-    3×11 Array{Float64,2}:
-     0.282114  0.282114  0.282114  0.282114  …  0.282114  0.282114  0.282114  0.0
-     0.421985  0.421985  0.421985  0.421985     0.421985  0.421985  0.421985  0.0
-     0.295901  0.295901  0.295901  0.295901     0.295901  0.295901  0.295901  0.0
-
-
-
 
 ```julia
 ### Procedure for plots
@@ -395,69 +163,5 @@ contour!(U1_plot,U2_plot,cvxrs_plot,levels=0,color=:greens)
 scatter!([u_plot0[1]],[u_plot0[2]],markersize=6, c=:red)
 #plot!(γ_plot*cos.(0:pi/50:2*pi).+u_plot0[1],γ_plot*sin.(0:pi/50:2*pi).+u_plot0[2])
 
-
-```
-
-    progress: 1/20
-    progress: 2/20
-    progress: 3/20
-    progress: 4/20
-    progress: 5/20
-
-
-    ┌ Warning: CVXRS was not optimal. (SLOW_PROGRESS)
-    └ @ Main /Users/dc/Documents/Github/CVXRS_master/PowerCVXRS/PowerCVXRS.jl:638
-
-
-    progress: 6/20
-
-
-    ┌ Warning: CVXRS was not optimal. (SLOW_PROGRESS)
-    └ @ Main /Users/dc/Documents/Github/CVXRS_master/PowerCVXRS/PowerCVXRS.jl:638
-
-
-    progress: 7/20
-    progress: 8/20
-
-
-    ┌ Warning: CVXRS was not optimal. (SLOW_PROGRESS)
-    └ @ Main /Users/dc/Documents/Github/CVXRS_master/PowerCVXRS/PowerCVXRS.jl:638
-
-
-    progress: 9/20
-
-
-    ┌ Warning: CVXRS was not optimal. (SLOW_PROGRESS)
-    └ @ Main /Users/dc/Documents/Github/CVXRS_master/PowerCVXRS/PowerCVXRS.jl:638
-
-
-    progress: 10/20
-    progress: 11/20
-    progress: 12/20
-    progress: 13/20
-    progress: 14/20
-    progress: 15/20
-    progress: 16/20
-    progress: 17/20
-    progress: 18/20
-    progress: 19/20
-
-
-
-![png](output_6_9.png)
-
-
-    progress: 20/20
-
-
-
-
-
-![png](output_6_11.png)
-
-
-
-
-```julia
 
 ```
