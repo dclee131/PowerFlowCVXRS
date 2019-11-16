@@ -54,8 +54,3 @@ Feasible Path Identification of Optimal Power Flow
     }
 
 
-```julia
-
-```
-
-
