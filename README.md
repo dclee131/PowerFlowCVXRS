@@ -42,7 +42,7 @@ network_data=opf_initialization(network_data)
 
 If you find this content useful for your research, please consider citing: 
 
-Convex Restriction of Power Flow Feasibility Set
+[1] Convex Restriction of Power Flow Feasibility Set
 
     @ARTICLE{lee2019convex,
       author={D. {Lee} and H. D. {Nguyen} and K. {Dvijotham} and K. {Turitsyn}},
