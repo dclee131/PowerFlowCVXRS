@@ -8,7 +8,7 @@ You can find implementations of convex restrictions for other problems such as M
 
 The script has been tested in Julia v1.1.
 The primary script is in "CVXRS_OPF.jl", and it can be run without installation. 
-To run the code, the follwing lists the necessary packages. The following packages are used currently:
+To run the code, the follwing lists the necessary packages.
 
 ```julia
 JuMP
