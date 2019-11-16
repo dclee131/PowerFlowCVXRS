@@ -1,6 +1,6 @@
 # Optimal Power Flow with Convex Restriction
 
-This code provides a Julia+JuMP based implementation for solving the AC Optimal Power Flow problem with Sequential Convex Restriction. The algorithm solves a sequence of convex optimization, in particular QCQP, to compute the optimal operating point.
+This code provides a Julia+JuMP based implementation for solving the AC Optimal Power Flow problem with Sequential Convex Restriction. The algorithm solves a sequence of convex optimization problems, in particular QCQP, to compute the optimal operating point.
 
 You can find implementations of convex restrictions for other problems such as MPC, Neural Network and Robotics in the project page.
 
@@ -22,13 +22,19 @@ Ipopt
 
 ## Quick Start
 
-Go to the root folder of `CVXRS_OPF`.
+You can find examples in the folder `example`.
 
 ```julia
-include("src/PowerCVXRS_polar.jl")
+## Import CVXRS_OPF functions
+include("src/CVXRS_OPF.jl")
 
+## Read network data using PowerModels.jl
 network_data = PowerModels.parse_file("../../pglib-opf-master/pglib_opf_case118_ieee.m");
-network_data=opf_initialization(network_data, 0.0)
+
+## Initiailize the network data by solving OPF problem
+network_data=opf_initialization(network_data)
+
+## Solve the OPF problem with Sequential Convex Restriction
 
 ```
 
