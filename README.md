@@ -2,6 +2,22 @@
 
 This code provides a Julia+JuMP based implementation for solving the AC Optimal Power Flow problem with Sequential Convex Restriction. The algorithm solves a sequence of convex optimization, in particular QCQP, to compute the optimal operating point.
 
+### Installation Requirements
+
+The script has been tested in Julia v1.1.
+The primary script is in "CVXRS_OPF.jl", and it can be run without installation. 
+To run the code, the follwing lists the necessary packages. The following packages are used currently:
+
+```julia
+JuMP
+MosekTools
+SparseArrays
+LinearAlgebra
+Plots
+PowerModels
+Ipopt
+```
+
 ## Quick Start
 
 Go to the root folder of `CVXRS_OPF`.
@@ -103,22 +119,6 @@ for iter=2:result_cvxr["max_iter"]
 end
 ```
 
-
-### Requirements
-
-The script has been tested in Julia v1.1.
-The primary script is in "CVXRS_OPF.jl", and it can be run without installation. 
-To run the code, the follwing lists the necessary packages. The following packages are used currently:
-
-```julia
-JuMP
-MosekTools
-SparseArrays
-LinearAlgebra
-Plots
-PowerModels
-Ipopt
-```
 
 ## Citing CVXRS_OPF
 
