@@ -1,5 +1,7 @@
 # Optimal Power Flow with Convex Restriction
 
+This code provides a Julia+JuMP based implementation for solving the AC Optimal Power Flow problem with Sequential Convex Restriction. The algorithm solves a sequence of convex optimization, in particular QCQP, to compute the optimal operating point.
+
 ## Quick Start
 
 Go to the root folder of `CVXRS_OPF`.
@@ -25,50 +27,6 @@ mab.fit(decisions, rewards)
 # Test
 mab.predict()
 ```
-
-
-### Requirements
-
-The library requires Python **3.6+**. The ``requirements.txt`` lists the necessary
-packages. The following packages are used currently:
-
-```python
-joblib
-numpy
-pandas
-scikit-learn
-scipy
-seaborn>=0.9.0
-```
-
-## Citing CVXRS_OPF
-
-If you found this content useful for your research, please consider citing: 
-
-Convex Restriction of Power Flow Feasibility Set
-
-    @ARTICLE{lee2019convex,
-      author={D. {Lee} and H. D. {Nguyen} and K. {Dvijotham} and K. {Turitsyn}},
-      journal={IEEE Transactions on Control of Network Systems},
-      title={Convex Restriction of Power Flow Feasibility Sets},
-      year={2019}, volume={6}, number={3}, pages={1235-1245}, month={Sep.}
-    }
-
-Feasible Path Identification of Optimal Power Flow
-
-    @ARTICLE{lee2019convex,
-      author={D. {Lee} and H. D. {Nguyen} and K. {Dvijotham} and K. {Turitsyn}},
-      journal={IEEE Transactions on Control of Network Systems},
-      title={Convex Restriction of Power Flow Feasibility Sets},
-      year={2019}, volume={6}, number={3},
-      pages={1235-1245}, doi={10.1109/TCNS.2019.2930896}, month={Sep.}
-    }
-
-
-```julia
-
-```
-
 
 ```julia
 include("src/PowerCVXRS_polar.jl")
@@ -146,22 +104,48 @@ end
 ```
 
 
+### Requirements
+
+The script has been tested in Julia v1.1.
+The primary script is in "CVXRS_OPF.jl", and it can be run without installation. 
+To run the code, the follwing lists the necessary packages. The following packages are used currently:
+
 ```julia
-### Procedure for plots
-resolution=20
-plot_rng=[-0.5 3 0 3]
-plot_bus=["2","3"]
-U1_plot,U2_plot,exact_plot,cvxrs_plot=plot2D(network_data,plot_bus,plot_rng,resolution)
+JuMP
+MosekTools
+SparseArrays
+LinearAlgebra
+Plots
+PowerModels
+Ipopt
+```
 
-u_plot0=[network_data["gen"][plot_bus[1]]["pg"], network_data["gen"][plot_bus[2]]["pg"]]
+## Citing CVXRS_OPF
 
-pyplot()
-default(show = true)
-#contour(U1_plot,U2_plot,exact_plot)
-contour(U1_plot,U2_plot,exact_plot,levels=0,color=:blues)
-contour!(U1_plot,U2_plot,cvxrs_plot,levels=0,color=:greens)
-scatter!([u_plot0[1]],[u_plot0[2]],markersize=6, c=:red)
-#plot!(γ_plot*cos.(0:pi/50:2*pi).+u_plot0[1],γ_plot*sin.(0:pi/50:2*pi).+u_plot0[2])
+If you found this content useful for your research, please consider citing: 
 
+Convex Restriction of Power Flow Feasibility Set
+
+    @ARTICLE{lee2019convex,
+      author={D. {Lee} and H. D. {Nguyen} and K. {Dvijotham} and K. {Turitsyn}},
+      journal={IEEE Transactions on Control of Network Systems},
+      title={Convex Restriction of Power Flow Feasibility Sets},
+      year={2019}, volume={6}, number={3}, pages={1235-1245}, month={Sep.}
+    }
+
+Feasible Path Identification of Optimal Power Flow
+
+    @ARTICLE{lee2019convex,
+      author={D. {Lee} and H. D. {Nguyen} and K. {Dvijotham} and K. {Turitsyn}},
+      journal={IEEE Transactions on Control of Network Systems},
+      title={Convex Restriction of Power Flow Feasibility Sets},
+      year={2019}, volume={6}, number={3},
+      pages={1235-1245}, doi={10.1109/TCNS.2019.2930896}, month={Sep.}
+    }
+
+
+```julia
 
 ```
+
+
