@@ -32,7 +32,7 @@ network_data=opf_initialization(network_data, 0.0)
 
 ## Citing CVXRS_OPF
 
-If you found this content useful for your research, please consider citing: 
+If you find this content useful for your research, please consider citing: 
 
 Convex Restriction of Power Flow Feasibility Set
 
