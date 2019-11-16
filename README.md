@@ -51,7 +51,7 @@ If you find this content useful for your research, please consider citing:
       year={2019}, volume={6}, number={3}, pages={1235-1245}, month={Sep.}
     }
 
-Feasible Path Identification of Optimal Power Flow
+[2] Feasible Path Identification of Optimal Power Flow
 
     @ARTICLE{lee2019convex,
       author={D. {Lee} and H. D. {Nguyen} and K. {Dvijotham} and K. {Turitsyn}},
