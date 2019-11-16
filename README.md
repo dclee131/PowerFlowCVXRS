@@ -2,6 +2,8 @@
 
 This code provides a Julia+JuMP based implementation for solving the AC Optimal Power Flow problem with Sequential Convex Restriction. The algorithm solves a sequence of convex optimization, in particular QCQP, to compute the optimal operating point.
 
+You can find implementations of convex restrictions for other problems such as MPC, Neural Network and Robotics in the project page.
+
 ### Installation Requirements
 
 The script has been tested in Julia v1.1.
