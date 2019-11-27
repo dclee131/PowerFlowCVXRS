@@ -2,7 +2,12 @@
 
 This code provides a Julia+JuMP based implementation for Convex Restriction of AC Power Flow Equations.
 
-The method has been exteded to solve AC Optimal Power Flow problems with Sequential Convex Restriction [2]. The algorithm solves a sequence of convex optimization problems, in particular QCQP, to compute the optimal operating point.
+[1] Convex Restriction of Power Flow Feasibility Sets: Convex Restriction for OPF problem provides a sufficient convex condition for solving AC optimal power flow while satisfying operational constraints. 
+
+[2] Feasible Path Identification: The method has been exteded to solve AC Optimal Power Flow problems with Sequential Convex Restriction [2]. The algorithm solves a sequence of convex optimization problems, in particular QCQP, to compute the optimal operating point.
+
+[3] Robust Optimal Power Flow with Convex Restriction: 
+
 
 ConVeX ReStriction (CVXRS) is a general technique that can analyse and optimize nonlinear systems using convex optimization.
 You can find implementations of convex restrictions for other problems such as MPC, Neural Network and Robotics in the [project page](https://dclee131.github.io/research/2019/10/07/CVXRS.html).
