@@ -2,6 +2,9 @@
 
 This code provides a Julia+JuMP based implementation for Convex Restriction of AC Optimal Power Flow problem.
 
+
+TL;DR
+
 [1] Convex Restriction of Power Flow Feasibility Sets: Convex Restriction for OPF problem provides a sufficient convex condition for solving AC optimal power flow while satisfying operational constraints. 
 
 [2] Feasible Path Identification in OPF with Sequential Convex Restriction: Using the Convex Restriction conditions, the AC OPF problem can be solved by a sequence of convex optimization problems. The output of the algorithm provides a guaranteed feasible path that satisfy the operational constraints.
