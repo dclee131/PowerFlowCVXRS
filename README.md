@@ -26,7 +26,7 @@ using JuMP, PowerModels, Ipopt, MosekTools, SparseArrays, LinearAlgebra, Plots
 ```
 The project uses [JuMP](https://github.com/JuliaOpt/JuMP.jl) for modeling the QCQP problem and uses MOSEK as the solver.
 Power flow data and equations are stored and solved based on [PowerModels](https://github.com/lanl-ansi/PowerModels.jl). 
-Figures in Julia are created with [Plots](https://github.com/JuliaPlots/Plots.jl). Color-coded figures were drawn in MATLAB where you can find relavant code in `plots/draw_boundary.m`.
+Figures in Julia are created with [Plots](https://github.com/JuliaPlots/Plots.jl). Color-coded figures were drawn in MATLAB, and you can find relavant code in `plots/draw_boundary.m`.
 
 ## Quick Start
 
