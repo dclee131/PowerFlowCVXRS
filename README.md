@@ -14,8 +14,10 @@ The primary script is in "CVXRS_OPF.jl", and it can be run without installation.
 To run the code, the follwing lists the necessary packages.
 
 ```julia
-using JuMP, MosekTools, SparseArrays, LinearAlgebra, Plots, PowerModels, Ipopt
+using JuMP, PowerModels, Ipopt, MosekTools, SparseArrays, LinearAlgebra, Plots
 ```
+The project uses [JuMP](https://github.com/JuliaOpt/JuMP.jl) for modeling the QCQP problem and uses MOSEK as the solver.
+The power flow data and equations are stored and solved based on [PowerModels](https://github.com/lanl-ansi/PowerModels.jl).
 
 ## Quick Start
 
