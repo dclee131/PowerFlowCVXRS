@@ -1,10 +1,10 @@
 # Optimal Power Flow with Convex Restriction
 
-This code provides a Julia+JuMP based implementation for Convex Restriction of AC Power Flow Equations.
+This code provides a Julia+JuMP based implementation for Convex Restriction of AC Optimal Power Flow problem.
 
 [1] Convex Restriction of Power Flow Feasibility Sets: Convex Restriction for OPF problem provides a sufficient convex condition for solving AC optimal power flow while satisfying operational constraints. 
 
-[2] Feasible Path Identification: The method has been exteded to solve AC Optimal Power Flow problems with Sequential Convex Restriction [2]. The algorithm solves a sequence of convex optimization problems, in particular QCQP, to compute the optimal operating point.
+[2] Feasible Path Identification in OPF with Sequential Convex Restriction: Using the Convex Restriction conditions, the AC OPF problem can be solved by a sequence of convex optimization problems. The output of the algorithm provides a guaranteed feasible path that satisfy the operational constraints.
 
 [3] Robust Optimal Power Flow with Convex Restriction: 
 
@@ -46,21 +46,20 @@ If you find this content useful for your research, please consider citing:
 
 [1] Convex Restriction of Power Flow Feasibility Set
 
-    @ARTICLE{lee2019convex,
+    @article{lee2019convex,
       author={D. {Lee} and H. D. {Nguyen} and K. {Dvijotham} and K. {Turitsyn}},
       journal={IEEE Transactions on Control of Network Systems},
       title={Convex Restriction of Power Flow Feasibility Sets},
       year={2019}, volume={6}, number={3}, pages={1235-1245}, month={Sep.}
     }
 
-[2] Feasible Path Identification of Optimal Power Flow
+[2] Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction
 
-    @ARTICLE{lee2019convex,
-      author={D. {Lee} and H. D. {Nguyen} and K. {Dvijotham} and K. {Turitsyn}},
-      journal={IEEE Transactions on Control of Network Systems},
-      title={Convex Restriction of Power Flow Feasibility Sets},
-      year={2019}, volume={6}, number={3},
-      pages={1235-1245}, doi={10.1109/TCNS.2019.2930896}, month={Sep.}
+    @article{lee2019feasible,
+      title={Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction},
+      author={Lee, Dongchan and Turitsyn, Konstantin and Molzahn, Daniel K and Roald, Line A},
+      journal={arXiv preprint arXiv:1906.09483},
+      year={2019}
     }
 
 
