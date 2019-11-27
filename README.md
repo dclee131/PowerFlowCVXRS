@@ -9,8 +9,7 @@ TL;DR
 
 [2] Feasible Path Identification in OPF with Sequential Convex Restriction: Using the Convex Restriction conditions, the AC OPF problem can be solved by a sequence of convex optimization problems. The output of the algorithm provides a guaranteed feasible path that satisfy the operational constraints.
 
-[3] Robust Optimal Power Flow with Convex Restriction: 
-
+[3] Robust Optimal Power Flow with Convex Restriction: The optimal solution for OPF problems almost always occur at the boundary of the operational constraints and is very sensitive to uncertainty in power injections. Convex Restriction provides a computationally tractable way to robustify the solution with a provable robustness guarantee.
 
 ConVeX ReStriction (CVXRS) is a general technique that can analyse and optimize nonlinear systems using convex optimization.
 You can find implementations of convex restrictions for other problems such as MPC, Neural Network and Robotics in the [project page](https://dclee131.github.io/research/2019/10/07/CVXRS.html).
