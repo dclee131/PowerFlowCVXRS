@@ -8,8 +8,8 @@ You can also find other applications of convex restriction in my [project page](
 
 ### Installation Requirements
 
-The script has written in Julia v1.1, and can be run without installation. The code uses [JuMP](https://github.com/JuliaOpt/JuMP.jl) for modeling the QCQP problem and uses MOSEK as the solver.
-Power flow data and equations are stored and solved based on [PowerModels.jl](https://github.com/lanl-ansi/PowerModels.jl).
+The script has written in Julia v1.1, and can be run without installation. The code uses JuMP for modeling the QCQP problem and uses MOSEK as the solver.
+Power flow data and equations are stored and solved based on PowerModels.jl.
 Follwing packages are summary of necessary packages to run the code.
 
 ```julia
