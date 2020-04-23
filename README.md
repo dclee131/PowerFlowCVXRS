@@ -6,14 +6,13 @@ You can also find other applications of convex restriction in my [project page](
 
 ### Installation Requirements
 
-The script has written in Julia v1.1, and can be run without installation. 
-Follwing packages are necessary to run the code.
+The script has written in Julia v1.1, and can be run without installation. The code uses [JuMP](https://github.com/JuliaOpt/JuMP.jl) for modeling the QCQP problem and uses MOSEK as the solver.
+Power flow data and equations are stored and solved based on [PowerModels.jl](https://github.com/lanl-ansi/PowerModels.jl).
+Follwing packages are summary of necessary packages to run the code.
 
 ```julia
 using JuMP, PowerModels, Ipopt, MosekTools, Gurobi, SparseArrays, LinearAlgebra, Plots
 ```
-The project uses [JuMP](https://github.com/JuliaOpt/JuMP.jl) for modeling the QCQP problem and uses MOSEK as the solver.
-Power flow data and equations are stored and solved based on [PowerModels](https://github.com/lanl-ansi/PowerModels.jl).
 
 ## Quick Start
 
@@ -28,8 +27,8 @@ network_data = PowerModels.parse_file("../../pglib-opf-master/pglib_opf_case118_
 ## Initiailize the network data by solving OPF problem
 network_data=opf_initialization(network_data)
 
-## Run Sequential Convex Restriction with 10 iterations
-network_data, result_cvxr = scrs(network_data, 10); # run sequential convex restriction
+## Run Sequential Convex Restriction with 5 iterations
+network_data, result_cvxr = scrs(network_data, 5);
 ```
 
 You can check the folder `tutorials` to find more examples.
@@ -47,7 +46,7 @@ If you find this content useful for your research, please consider citing:
       year={2019}, volume={6}, number={3}, pages={1235-1245}, month={Sep.}
     }
 
-[2] Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction: proposed to use convex restriction sequentially to identify a feasible path.
+[2] Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction: uses convex restriction sequentially to identify a feasible path.
 
     @article{lee2019feasible,
       title={Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction},
@@ -56,5 +55,5 @@ If you find this content useful for your research, please consider citing:
       year={2019}
     }
 
-[3] Robust Optimal Power Flow with Convex Restriction: The optimal solution for OPF problems almost always occur at the boundary of the operational constraints and is very sensitive to uncertainty in power injections. Convex Restriction provides a computationally tractable way to robustify the solution with a provable robustness guarantee.
+[3] Robust Optimal Power Flow with Convex Restriction: convex restriction provides a tractable way to solve robust OPF problem.
 
