@@ -4,7 +4,7 @@ This repository provides implementation code for Convex Restriction of AC Optima
 
 <img src="tutorials/figure/illustration.png" width="750">
 
-You can also find other applications of convex restriction in my [project page](https://dclee131.github.io/research/2019/10/07/CVXRS.html).
+You can find other applications of convex restriction in [my project page](https://dclee131.github.io/research/2019/10/07/CVXRS.html).
 
 ### Installation Requirements
 
