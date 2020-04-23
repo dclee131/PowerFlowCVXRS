@@ -20,7 +20,7 @@ using JuMP, PowerModels, Ipopt, MosekTools, Gurobi, SparseArrays, LinearAlgebra,
 
 
 ```julia
-## Import CVXRS_OPF functions
+## Import PowerFlowCVXRS functions
 include("../src/main.jl")
 
 ## Read network data using PowerModels.jl
