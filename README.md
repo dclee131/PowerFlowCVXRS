@@ -1,6 +1,6 @@
 # Optimal Power Flow with Convex Restriction
 
-This code provides implementation code for Convex Restriction of AC Optimal Power Flow problem. Please see citation for more details on methodology.
+This repository provides implementation code for Convex Restriction of AC Optimal Power Flow problem. Please see citations for more details.
 
 <img src="tutorials/figure/illustration.png" width="750">
 
@@ -8,9 +8,8 @@ You can also find other applications of convex restriction in my [project page](
 
 ### Installation Requirements
 
-The script has written in Julia v1.1, and can be run without installation. The code uses JuMP for modeling the QCQP problem and uses MOSEK as the solver.
-Power flow data and equations are stored and solved based on PowerModels.jl.
-Follwing packages are summary of necessary packages to run the code.
+The script has written in Julia v1.1, and can be run without installation.
+Follwing packages are necessary to run the code.
 
 ```julia
 using JuMP, PowerModels, Ipopt, MosekTools, Gurobi, SparseArrays, LinearAlgebra, Plots
