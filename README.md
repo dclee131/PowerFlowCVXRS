@@ -37,7 +37,8 @@ You can check the folder `tutorials` to find more examples.
 
 If you find this content useful for your research, please consider citing: 
 
-[1] Convex Restriction of Power Flow Feasibility Set: proposed convex restriction of OPF constraints.
+[1] Convex Restriction of Power Flow Feasibility Set <br />
+TL;DR: proposes convex restriction of OPF constraints.
 
     @article{lee2019convex,
       author={Lee, Dongchan and Nguyen, Hung D. and Dvijotham, K. and Turitsyn, Konstantin},
@@ -46,7 +47,8 @@ If you find this content useful for your research, please consider citing:
       year={2019}, volume={6}, number={3}, pages={1235-1245}, month={Sep.}
     }
 
-[2] Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction: uses convex restriction sequentially to identify a feasible path.
+[2] Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction <br />
+TL;DR: uses convex restriction sequentially to identify a feasible path.
 
     @article{lee2019feasible,
       title={Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction},
@@ -55,5 +57,6 @@ If you find this content useful for your research, please consider citing:
       year={2019}
     }
 
-[3] Robust Optimal Power Flow with Convex Restriction: convex restriction provides a tractable way to solve robust OPF problem.
+[3] Robust Optimal Power Flow with Convex Restriction  <br />
+TL;DR: convex restriction provides a tractable way to solve robust OPF problem.
 
