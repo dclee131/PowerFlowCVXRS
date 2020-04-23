@@ -2,7 +2,7 @@
 
 This code provides implementation code for Convex Restriction of AC Optimal Power Flow problem. Please see citation for more details on methodology.
 
-<img src="tutorials/figure/illustration.pdf" width="300">
+<img src="tutorials/figure/illustration.png" width="600">
 
 You can also find other applications of convex restriction in my [project page](https://dclee131.github.io/research/2019/10/07/CVXRS.html).
 
