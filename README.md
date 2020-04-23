@@ -1,28 +1,26 @@
 # Optimal Power Flow with Convex Restriction
 
-This code provides a implementation for Convex Restriction of AC Optimal Power Flow problem.
+This code provides implementation code for Convex Restriction of AC Optimal Power Flow problem. Please see citation for more details on methodology.
 
-You can find more details of convex restrictions and other applications in the [project page](https://dclee131.github.io/research/2019/10/07/CVXRS.html).
+You can also find other applications of convex restriction in my [project page](https://dclee131.github.io/research/2019/10/07/CVXRS.html).
 
 ### Installation Requirements
 
 The script has written in Julia v1.1, and can be run without installation. 
-
 Follwing packages are necessary to run the code.
 
 ```julia
-using JuMP, PowerModels, Ipopt, MosekTools, SparseArrays, LinearAlgebra, Plots
+using JuMP, PowerModels, Ipopt, MosekTools, Gurobi, SparseArrays, LinearAlgebra, Plots
 ```
 The project uses [JuMP](https://github.com/JuliaOpt/JuMP.jl) for modeling the QCQP problem and uses MOSEK as the solver.
-Power flow data and equations are stored and solved based on [PowerModels](https://github.com/lanl-ansi/PowerModels.jl). 
-Figures in Julia are created with [Plots](https://github.com/JuliaPlots/Plots.jl). Color-coded figures were drawn in MATLAB, and you can find relavant code in `plots/draw_boundary.m`.
+Power flow data and equations are stored and solved based on [PowerModels](https://github.com/lanl-ansi/PowerModels.jl).
 
 ## Quick Start
 
 
 ```julia
 ## Import CVXRS_OPF functions
-include("src/CVXRS_OPF.jl")
+include("../src/main.jl")
 
 ## Read network data using PowerModels.jl
 network_data = PowerModels.parse_file("../../pglib-opf-master/pglib_opf_case118_ieee.m");
@@ -30,11 +28,13 @@ network_data = PowerModels.parse_file("../../pglib-opf-master/pglib_opf_case118_
 ## Initiailize the network data by solving OPF problem
 network_data=opf_initialization(network_data)
 
+## Run Sequential Convex Restriction with 10 iterations
+network_data, result_cvxr = scrs(network_data, 10); # run sequential convex restriction
 ```
 
 You can check the folder `tutorials` to find more examples.
 
-## Citing CVXRS_OPF
+## Citation
 
 If you find this content useful for your research, please consider citing: 
 
