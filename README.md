@@ -4,7 +4,6 @@ This repository provides implementation code for Convex Restriction of AC Optima
 
 <img src="tutorials/figure/illustration.png" width="750">
 
-You can find other applications of convex restriction in [my project page](https://dclee131.github.io/research/2019/10/07/CVXRS.html).
 
 ### Installation Requirements
 
@@ -39,7 +38,6 @@ You can check the folder `tutorials` to find more examples.
 If you find this content useful for your research, please consider citing: 
 
 [1] Convex Restriction of Power Flow Feasibility Set <br />
-TL;DR: proposes convex restriction of OPF constraints.
 
     @article{lee2019convex,
       author={Lee, Dongchan and Nguyen, Hung D. and Dvijotham, K. and Turitsyn, Konstantin},
@@ -49,7 +47,6 @@ TL;DR: proposes convex restriction of OPF constraints.
     }
 
 [2] Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction <br />
-TL;DR: uses convex restriction sequentially to identify a feasible path.
 
     @article{lee2019feasible,
       title={Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction},
@@ -59,5 +56,4 @@ TL;DR: uses convex restriction sequentially to identify a feasible path.
     }
 
 [3] Robust Optimal Power Flow with Convex Restriction  <br />
-TL;DR: convex restriction provides a tractable way to solve robust OPF problem.
 
