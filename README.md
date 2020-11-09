@@ -53,13 +53,7 @@ If you find this content useful for your research, please consider citing:
       journal={IEEE Transactions on Power Systems}, 
       title={Feasible Path Identification in Optimal Power Flow With Sequential Convex Restriction}, 
       year={2020},  volume={35},  number={5},  pages={3648-3659}
-    }
-
-journal={IEEE Transactions on Power Systems},
-      year={2020},
-      publisher={IEEE}
-    }
-    
+    }    
 
 [3] Robust Optimal Power Flow with Convex Restriction  <br />
 
