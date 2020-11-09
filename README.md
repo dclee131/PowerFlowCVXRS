@@ -43,10 +43,25 @@ If you find this content useful for your research, please consider citing:
       author={Lee, Dongchan and Nguyen, Hung D. and Dvijotham, K. and Turitsyn, Konstantin},
       journal={IEEE Transactions on Control of Network Systems},
       title={Convex Restriction of Power Flow Feasibility Sets},
-      year={2019}, volume={6}, number={3}, pages={1235-1245}, month={Sep.}
+      year={2019}, volume={6}, number={3}, pages={1235-1245}
     }
 
 [2] Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction <br />
+
+    @article{lee2020feasible,
+      author={Lee, Dongchan and Turitsyn, Konstantin and Molzahn, Daniel Kenneth and Roald, Line},
+      journal={IEEE Transactions on Power Systems}, 
+      title={Feasible Path Identification in Optimal Power Flow With Sequential Convex Restriction}, 
+      year={2020},  volume={35},  number={5},  pages={3648-3659}
+    }
+
+journal={IEEE Transactions on Power Systems},
+      year={2020},
+      publisher={IEEE}
+    }
+    
+
+[3] Robust Optimal Power Flow with Convex Restriction  <br />
 
     @article{lee2019feasible,
       title={Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction},
@@ -54,6 +69,3 @@ If you find this content useful for your research, please consider citing:
       journal={arXiv preprint arXiv:1906.09483},
       year={2019}
     }
-
-[3] Robust Optimal Power Flow with Convex Restriction  <br />
-
