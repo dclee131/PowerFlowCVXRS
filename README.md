@@ -1,14 +1,13 @@
 # Optimal Power Flow with Convex Restriction
 
-This repository provides implementation code for Convex Restriction of AC Optimal Power Flow problem. Please see citations for more details.
+This repository provides implementation code for Convex Restriction of AC Optimal Power Flow problem. Please see references for more details.
 
 <img src="tutorials/figure/illustration.png" width="750">
 
 
 ### Installation Requirements
 
-The script has written in Julia v1.1, and can be run without installation.
-Follwing packages are necessary to run the code.
+The script was written in Julia v1.1 using the following packages.
 
 ```julia
 using JuMP, PowerModels, Ipopt, MosekTools, Gurobi, SparseArrays, LinearAlgebra, Plots
