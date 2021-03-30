@@ -30,8 +30,7 @@ network_data=opf_initialization(network_data)
 network_data, result_cvxr = scrs(network_data, 5);
 ```
 
-You can try other systems using [PGLib test cases](https://github.com/power-grid-lib/pglib-opf.
-https://github.com/power-grid-lib/pglib-opf)
+You can try other systems using [PGLib test cases](https://github.com/power-grid-lib/pglib-opf)
 
 ## Citation
 
