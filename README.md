@@ -2,7 +2,7 @@
 
 This repository provides implementation code for Convex Restriction of AC Optimal Power Flow problem. Please see references for more details.
 
-<img src="tutorials/figure/illustration.png" width="750">
+<img src="examples/figure/illustration.png" width="750">
 
 
 ### Installation Requirements
